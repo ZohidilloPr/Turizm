@@ -615,7 +615,103 @@ main{
 // start footer
 footer{
     background: $color4;
+    padding: 70px 0 30px;
+    .footer__foot {
+        font-size: 16px;
+        text-align: center;
+        color: #bbbbbb;
+        padding-top: 90px
+    }
+    #footer_main{
+        @include container(90%);
+        .sitemap {
+            display: flex;
+            justify-content: space-between;
+
+            .aboutsite {
+                width: 20%;
+                .text-footer {
+                    p{
+                        margin-top: 10px;
+                    }
+                            font-size: 16px;
+                            text-transform: capitalize;
+                            text-decoration: none;
+                            font-weight: 300;
+                            color: #bbbbbb;
+                }
+                h3{
+                    font-size: 20px;
+                    color: #ffffff;
+                    text-transform: capitalize;
+                    margin-bottom: 20px;
+                    font-weight: 500;
+                    position: relative;
+                }
+                .social-links {
+                    padding-top: 10px;
+                    a {
+                        display: inline-block;
+                        height: 40px;
+                        width: 40px;
+                        margin: 0 10px 10px 0;
+                        color: #ffffff;
+                        text-align: center;
+                        line-height: 40px;
+                        border-radius: 50%;
+                        transition: all 0.5s ease;
+                    }
+                }
+                .social-links {
+                    a:hover {
+                        color: $color1;
+                    }
+                }
+            }
+
+            .row{
+                width: 70%;
+                .footer-col {
+                    width:30%;
+                    padding: 0 15px;
+                    h3 {
+                        font-size: 20px;
+                        color: #ffffff;
+                        text-transform: capitalize;
+                        margin-bottom: 20px;
+                        font-weight: 500;
+                        position: relative;
+                    }
+                    ul {
+                        margin-left: 0;
+                        li:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+                        li {
+    
+                            a{
+                                font-size: 18px;
+                                text-transform: capitalize;
+                                text-decoration: none;
+                                font-weight: 300;
+                                color: #bbbbbb;
+                                display: block;
+                                transition: all 0.3s ease;
+                                &:hover{
+                                    color: #ffffff;
+                                    padding-left: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
 }
+
+
 // end footer
 
 // MAIN-WINDOW SECTION

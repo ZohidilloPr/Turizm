@@ -530,6 +530,93 @@ main #menu-places #menu-box .box span a, main #menu-places #menu-box .box span s
 
 footer {
   background: #010C17;
+  padding: 70px 0 30px;
+}
+footer .footer__foot {
+  font-size: 16px;
+  text-align: center;
+  color: #bbbbbb;
+  padding-top: 90px;
+}
+footer #footer_main {
+  width: 90%;
+  margin: auto;
+}
+footer #footer_main .sitemap {
+  display: flex;
+  justify-content: space-between;
+}
+footer #footer_main .sitemap .aboutsite {
+  width: 20%;
+}
+footer #footer_main .sitemap .aboutsite .text-footer {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+}
+footer #footer_main .sitemap .aboutsite .text-footer p {
+  margin-top: 10px;
+}
+footer #footer_main .sitemap .aboutsite h3 {
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+}
+footer #footer_main .sitemap .aboutsite .social-links {
+  padding-top: 10px;
+}
+footer #footer_main .sitemap .aboutsite .social-links a, footer #footer_main .sitemap .aboutsite .social-links main section .all button, main section .all footer #footer_main .sitemap .aboutsite .social-links button {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+footer #footer_main .sitemap .aboutsite .social-links a:hover, footer #footer_main .sitemap .aboutsite .social-links main section .all button:hover, main section .all footer #footer_main .sitemap .aboutsite .social-links button:hover {
+  color: #03396C;
+}
+footer #footer_main .sitemap .row {
+  width: 70%;
+}
+footer #footer_main .sitemap .row .footer-col {
+  width: 30%;
+  padding: 0 15px;
+}
+footer #footer_main .sitemap .row .footer-col h3 {
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+}
+footer #footer_main .sitemap .row .footer-col ul {
+  margin-left: 0;
+}
+footer #footer_main .sitemap .row .footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+footer #footer_main .sitemap .row .footer-col ul li a, footer #footer_main .sitemap .row .footer-col ul li main section .all button, main section .all footer #footer_main .sitemap .row .footer-col ul li button {
+  font-size: 18px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+footer #footer_main .sitemap .row .footer-col ul li a:hover, footer #footer_main .sitemap .row .footer-col ul li main section .all button:hover, main section .all footer #footer_main .sitemap .row .footer-col ul li button:hover {
+  color: #ffffff;
+  padding-left: 8px;
 }
 
 #header {
