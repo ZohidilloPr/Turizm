@@ -80,7 +80,12 @@
 .a-hover{
     text-decoration: underline !important;
 }
+
 // scrollbar edit start
+html{
+    scrollbar-width: thin;
+    scrollbar-color: $color1 $color3;
+}
 
 ::-webkit-scrollbar{
     width: 2px;
@@ -99,10 +104,6 @@
 }
 ::-webkit-scrollbar-thumb:hover{
     background: $color2;
-}
-html{
-    scrollbar-width: thin;
-    scrollbar-color: $color1 $color3;
 }
 // end scrollbar edit
 
@@ -617,3 +618,48 @@ footer{
 }
 // end footer
 
+// MAIN-WINDOW SECTION
+
+// start header
+#header{
+    height: 40vh;
+    @include bg-img('https://vsegda-pomnim.com/uploads/posts/2022-04/1650203793_49-vsegda-pomnim-com-p-gornie-tyulpani-uzbekistana-foto-56.jpg');
+}
+// #main{
+//     // @include container(90%);
+//     margin-top: 50px;
+//     display: inline-flex;
+//     justify-content: space-between;
+//     .sidebar_left{
+//         width: 28%;
+//         height: 300px;
+//         border: 1px solid;
+//         .news-card{
+//             width: 350px;
+//             padding: 20px;
+//             background-color: $color3;
+//             border: 1px solid;
+//             .news-title{
+//                 span{
+//                     a{
+//                         color: $color4;
+//                         font-size: 25px;
+//                         &:hover{
+//                             text-decoration: underline !important;
+//                         }
+//                     }
+//                 }
+//             }
+//             .news-description{
+//                 text-align: justify;
+//                 span{
+//                     font-family: 15px;
+//                 }
+//             }
+//         }
+//     }
+//     .main-window{
+//         width: 70%;
+//         border: 1px solid;
+//     }
+// }

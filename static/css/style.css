@@ -55,6 +55,11 @@
   text-decoration: underline !important;
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #03396C #fff;
+}
+
 ::-webkit-scrollbar {
   width: 2px;
   -webkit-transition: 1s all ease-in-out;
@@ -78,11 +83,6 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #0566C1;
-}
-
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #03396C #fff;
 }
 
 nav {
@@ -530,4 +530,12 @@ main #menu-places #menu-box .box span a, main #menu-places #menu-box .box span s
 
 footer {
   background: #010C17;
+}
+
+#header {
+  height: 40vh;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  background-image: url("https://vsegda-pomnim.com/uploads/posts/2022-04/1650203793_49-vsegda-pomnim-com-p-gornie-tyulpani-uzbekistana-foto-56.jpg");
 }/*# sourceMappingURL=style.css.map */
