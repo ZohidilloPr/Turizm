@@ -85,6 +85,7 @@
 html{
     scrollbar-width: thin;
     scrollbar-color: $color1 $color3;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar{
@@ -277,7 +278,7 @@ main{
                 margin: 20px 30px;
                 position: relative;
                 border-radius: 10px;
-                width: 440px !important; 
+                width: 390px !important; 
                 transition: 1s ease-in-out;
                 @include box-shadow(15px, $color2);
                 // border: 1px solid red;
@@ -335,7 +336,7 @@ main{
                 margin: 20px 10px;
                 position: relative;
                 border-radius: 10px;
-                width: 440px !important;
+                width: 390px !important;
                 @include box-shadow(20px, $color1);
                 // border: 1px solid blueviolet;
                 &:hover{
@@ -474,7 +475,7 @@ main{
                 margin: 20px 10px;
                 position: relative;
                 border-radius: 10px;
-                width: 440px !important;
+                width: 390px !important;
                 background-color: $color3;
                 transition: 0.45s ease-in-out;
                 @include box-shadow(10px, $color1);
@@ -669,8 +670,9 @@ footer{
                 }
             }
 
-            .row{
-                width: 60%;
+            .footer-row{
+                width: 70%;
+                display: flex;
                 .footer-col {
                     width:30%;
                     padding: 0 15px;
@@ -711,19 +713,40 @@ footer{
     }
 }
 
-@media(max-width:574) {
+@media(max-width:574px) {
+    #questions {
+        .poll{
+            .poll-card {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+
     footer {
         display: grid;
 
-        .footer_main {
+        #footer_main {
             .sitemap {
+                .aboutsite {
+                    width: 100%;
+                    align-items: center;
+                }
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
-                .row {
+                        
+                .footer-row {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
                     .footer-col {
-                        display: grid;
-                        grid-template-columns: repeat(1, 1fr);
-        
+                        width: 100%;
+                        align-items: center;
+                        &:active {
+                            bottom: 32px;
+                            pointer-events: auto;
+                            opacity: 1;
+
+                        }
                     }
                 }
             }
@@ -734,6 +757,23 @@ footer{
 
 
 // end footer
+
+.to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+    border-radius: 50%;
+    &:hover{
+        bottom: 32px;
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+}
 
 // MAIN-WINDOW SECTION
 

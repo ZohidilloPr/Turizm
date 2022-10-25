@@ -58,6 +58,7 @@
 html {
   scrollbar-width: thin;
   scrollbar-color: #03396C #fff;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -221,7 +222,7 @@ main #news #news-row .news-colum {
   margin: 20px 30px;
   position: relative;
   border-radius: 10px;
-  width: 440px !important;
+  width: 390px !important;
   transition: 1s ease-in-out;
   box-shadow: 3px 1px 15px #0566C1;
 }
@@ -276,7 +277,7 @@ main #hududlar #areas .area-colum {
   margin: 20px 10px;
   position: relative;
   border-radius: 10px;
-  width: 440px !important;
+  width: 390px !important;
   box-shadow: 3px 1px 20px #03396C;
 }
 main #hududlar #areas .area-colum:hover .area-card {
@@ -404,7 +405,7 @@ main #places #places_card .places-collum {
   margin: 20px 10px;
   position: relative;
   border-radius: 10px;
-  width: 440px !important;
+  width: 390px !important;
   background-color: #fff;
   transition: 0.45s ease-in-out;
   box-shadow: 3px 1px 10px #03396C;
@@ -584,14 +585,15 @@ footer #footer_main .sitemap .aboutsite .social-links a, footer #footer_main .si
 footer #footer_main .sitemap .aboutsite .social-links a:hover, footer #footer_main .sitemap .aboutsite .social-links main section .all button:hover, main section .all footer #footer_main .sitemap .aboutsite .social-links button:hover {
   color: #03396C;
 }
-footer #footer_main .sitemap .row {
-  width: 60%;
+footer #footer_main .sitemap .footer-row {
+  width: 70%;
+  display: flex;
 }
-footer #footer_main .sitemap .row .footer-col {
+footer #footer_main .sitemap .footer-row .footer-col {
   width: 30%;
   padding: 0 15px;
 }
-footer #footer_main .sitemap .row .footer-col h3 {
+footer #footer_main .sitemap .footer-row .footer-col h3 {
   font-size: 20px;
   color: #ffffff;
   text-transform: capitalize;
@@ -599,13 +601,13 @@ footer #footer_main .sitemap .row .footer-col h3 {
   font-weight: 500;
   position: relative;
 }
-footer #footer_main .sitemap .row .footer-col ul {
+footer #footer_main .sitemap .footer-row .footer-col ul {
   padding-left: 0px !important;
 }
-footer #footer_main .sitemap .row .footer-col ul li:not(:last-child) {
+footer #footer_main .sitemap .footer-row .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
-footer #footer_main .sitemap .row .footer-col ul li a, footer #footer_main .sitemap .row .footer-col ul li main section .all button, main section .all footer #footer_main .sitemap .row .footer-col ul li button {
+footer #footer_main .sitemap .footer-row .footer-col ul li a, footer #footer_main .sitemap .footer-row .footer-col ul li main section .all button, main section .all footer #footer_main .sitemap .footer-row .footer-col ul li button {
   font-size: 18px;
   text-transform: capitalize;
   text-decoration: none;
@@ -614,24 +616,57 @@ footer #footer_main .sitemap .row .footer-col ul li a, footer #footer_main .site
   display: block;
   transition: all 0.3s ease;
 }
-footer #footer_main .sitemap .row .footer-col ul li a:hover, footer #footer_main .sitemap .row .footer-col ul li main section .all button:hover, main section .all footer #footer_main .sitemap .row .footer-col ul li button:hover {
+footer #footer_main .sitemap .footer-row .footer-col ul li a:hover, footer #footer_main .sitemap .footer-row .footer-col ul li main section .all button:hover, main section .all footer #footer_main .sitemap .footer-row .footer-col ul li button:hover {
   color: #ffffff;
   padding-left: 8px;
 }
 
-@media (max-width: 574) {
+@media (max-width: 574px) {
+  #questions .poll .poll-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
   footer {
     display: grid;
   }
-  footer .footer_main .sitemap {
+  footer #footer_main .sitemap {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  footer .footer_main .sitemap .row .footer-col {
+  footer #footer_main .sitemap .aboutsite {
+    width: 100%;
+    align-items: center;
+  }
+  footer #footer_main .sitemap .footer-row {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  footer #footer_main .sitemap .footer-row .footer-col {
+    width: 100%;
+    align-items: center;
+  }
+  footer #footer_main .sitemap .footer-row .footer-col:active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
   }
 }
+.to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  border-radius: 50%;
+}
+.to-top:hover {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
 #header {
   height: 40vh;
   background-size: cover;
