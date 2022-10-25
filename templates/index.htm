@@ -60,6 +60,9 @@
                 </div>
             </div>
         </nav>
+
+        
+
         <!-- start header -->
         <header>
             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -424,7 +427,7 @@
         <footer>
             <div id="footer_main">
                 <div class="sitemap">
-                    <div class="row">
+                    <div class="footer-row">
                     <div class="footer-col">
                         <h3>Hududlar</h3>
                         <ul>
@@ -456,7 +459,7 @@
                         <span>Tel: +99871000000</span>
                         <br/>
                         <span>Tel: +99890000000</span>
-                        <p>Ish vaqtimiz: ( 9:00 / 18:00 )</p>
+                        <p>Murojaat qilish vaqti: <br> ( 9:00 / 18:00 )</p>
                         <p>Manzil: Toshkent viloyati Nurafshon shahri Toshkent yo'li ko'chasi 26/1</p>
                         
                     </div>
@@ -489,6 +492,14 @@
             </div>
             <div class="footer__foot"><p>Toshkent viloyati Turizm qo'mitasi 2022 &copy;</p></div>
         </footer>
+
+        <div class="to-top">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                </svg>
+            </a>
+        </div>
         <!-- end footer -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="../static/Js/models/slick/slick.min.js"></script>
@@ -496,6 +507,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
+            $(".to-top").hide();
             $('#images-modal').hide();
             $('#slideshow-btn').click(function(){
                 $('#images-modal').slideDown(1000);
@@ -608,8 +620,10 @@
             $(window).scroll(function(){
                 if (document.documentElement.scrollTop > 10) {
                     $('#nav-head').addClass('scrol-fixed');
+                    $(".to-top").show(500);
                 } else {
                     $('#nav-head').removeClass('scrol-fixed');
+                    $(".to-top").hide(200);
                 }
             })
             $("#myCarousel").carousel();
